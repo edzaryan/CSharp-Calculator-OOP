@@ -20,19 +20,23 @@ while(true) {
             
         Console.WriteLine($"Result: {result}");
     }
+    catch (FormatException) 
+    {
+        Console.WriteLine("Invalid input. Please enter a valid number.");
+    }
+    catch (ArgumentException ex)
+    {
+        Console.WriteLine(ex.Message);
+    }
     catch
     {
-        Console.WriteLine("An Exception occured !!!");
+        Console.WriteLine("An Exception occurred !!!");
     }
     
     Console.WriteLine("Do you want to do more operations ? (n - no | y - yes)");
 
-    char? x = Convert.ToChar(Console.ReadLine());
-
-    if (x == 'n') {
-        break;
-    }
+    if (Convert.ToChar(Console.ReadLine()) != 'y') break;
 }
 
 
-Console.ReadKey();
+

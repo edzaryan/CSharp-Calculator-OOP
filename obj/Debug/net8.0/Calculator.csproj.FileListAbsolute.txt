@@ -12,3 +12,4 @@ C:\Users\Dell\OneDrive\Desktop\Calculator\Calculator\obj\Debug\net8.0\refint\Cal
 C:\Users\Dell\OneDrive\Desktop\Calculator\Calculator\obj\Debug\net8.0\Calculator.pdb
 C:\Users\Dell\OneDrive\Desktop\Calculator\Calculator\obj\Debug\net8.0\Calculator.genruntimeconfig.cache
 C:\Users\Dell\OneDrive\Desktop\Calculator\Calculator\obj\Debug\net8.0\ref\Calculator.dll
+C:\Users\Dell\OneDrive\Desktop\Calculator\Calculator\obj\Debug\net8.0\Calculator.sourcelink.json
