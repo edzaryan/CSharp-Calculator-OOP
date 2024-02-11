@@ -3,28 +3,28 @@ public class Calculator
 {
     public static double PerformOperation(double x, double y, char operation)
     {
-        double result;
+        Operation op;
 
         switch(operation) {
             case '+':   
-                result = Operation.Compute(new Addition(), x, y);
+                op = new Addition();
                 break;
             case '-':
-                result = Operation.Compute(new Subtraction(), x, y);
+                op = new Subtraction();
                 break;
             case '/':
-                result = Operation.Compute(new Division(), x, y);
+                op = new Division();
                 break;
             case '*':
-                result = Operation.Compute(new Multiplication(), x, y);
+                op = new Multiplication();
                 break;
             case '%':
-                result = Operation.Compute(new Percentage(), x, y);
+                op = new Percentage();
                 break;
             default:
                 throw new ArgumentException("Invalid operation");
         }
 
-        return result;
+        return Operation.Compute(op, x, y);
     }
 }
